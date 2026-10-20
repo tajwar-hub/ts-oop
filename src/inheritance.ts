@@ -26,27 +26,21 @@ class User {
 
 // child class
 class Student extends User {
-
   private _fee: number;
-  
 
-  constructor(name: string, age: number, email: string, fee:number){
-        super(name, age, email)
-        this._fee = fee
+  constructor(name: string, age: number, email: string, fee: number) {
+    super(name, age, email);
+    this._fee = fee;
   }
 
   get email() {
-    return this._email
+    return this._email;
   }
-
-
-
- 
 }
 
-const student = new Student("Rafi", 16, "rafi@gmail.com", 2000)
+const student = new Student("Rafi", 16, "rafi@gmail.com", 2000);
 
-console.log(student.age)
+console.log(student.age);
 
 // const user = new User("Abul", 27, "abul@kabul.com")
 

@@ -1,30 +1,36 @@
-const studentName = "Rafi"
-const studentAge = 16
-const studentEmail = "rafi@gmail.com"
+const studentName = "Rafi";
+const studentAge = 16;
+const studentEmail = "rafi@gmail.com";
 
+const studentName2 = "Sadia";
+const studentAge2 = 17;
+const studentEmail2 = "sadia@gmail.com";
 
-const studentName2 = "Sadia"
-const studentAge2 = 17
-const studentEmail2 = "sadia@gmail.com"
+const createStudent = (
+  name: string,
+  age: number,
+  email: string,
+  marks: number,
+) => {
+  const obj = {
+    name,
+    age,
+    email,
+    marks,
+    forgatePass() {
+      ///100 line
+    },
+  };
 
-const createStudent = (name:string, age:number, email:string, marks:number) => {
+  return obj;
+};
 
-    const obj = {name, age, email, marks, forgatePass(){
-        ///100 line 
-    }}
+const rafi = createStudent("Rafi", 16, "rafi@gmail.com", 100);
+const sadia = createStudent("Sadia", 17, "sadia@gmail.com", 200);
 
-    return obj
+rafi.marks = 0;
 
-}
-
-const rafi = createStudent("Rafi", 16, "rafi@gmail.com", 100)
-const sadia = createStudent("Sadia", 17, "sadia@gmail.com", 200)
-
-rafi.marks = 0
-
-console.log(rafi, sadia)
-
-
+console.log(rafi, sadia);
 
 // const rafi = {
 //     name: "Rafi",
@@ -32,4 +38,3 @@ console.log(rafi, sadia)
 //     email: "rafi@gmail.com",
 
 // }
-
